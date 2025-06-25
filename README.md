@@ -25,7 +25,7 @@ To minimize hallucination, prompts explicitly instruct the model to "only use th
 - Bonus 
     - Redis-based caching (see `redis_cache.py`)
     - Token-by-token streaming output (`stream=True` in `llm_agent.py`)
-    - Logging of queries and responses to SQLite (`query_log.db`)
+    - Logging of queries and responses to SQLite (`query_log.db` by `db_logger.py`)
 
 ## 🗂️ Project Structure
 ```
@@ -34,6 +34,7 @@ To minimize hallucination, prompts explicitly instruct the model to "only use th
  ┃ ┣ mock_data
  ┃ ┣ meta_data.json
  ┣ vector_store
+ ┣ db_logger.py
  ┣ llm_agent.py
  ┣ main.py
  ┣ retriever.py
@@ -45,6 +46,7 @@ To minimize hallucination, prompts explicitly instruct the model to "only use th
 - **data/mock_data**: Contains sample document data used for testing the system. The mock_data folder contains a total of 10 sample documents. These documents are a mix of real-world data collected from publicly available internet sources and carefully crafted mock data created for testing purposes. To effectively test the system’s retrieval accuracy and relevance, the documents cover a variety of topics related to dog health and nutrition, including recipes for dogs with cancer, general dog treat recipes, nutritional research, and unrelated animal welfare topics.    
 - **data/meta_data.json**: Manages metadata for each document including id, title, topic, and source(article: from internet / mock: mock) in JSON format. 
 - **vector_store**: Stores embedding vectors of documents.
+- **db_logger.py**: Handles logging of each query, generated answer, and document sources to a local SQLite database (query_logs.db). This allows for auditing, debugging, or analyzing query history.
 - **llm_agent.py**: Contains code for calling the OpenAI API(Model: GPT-4o), generating answers based on retrieved documents, and caching results with Redis. It includes support for streaming (stream=True) to return token-by-token responses 
 - **main.py**: The main FastAPI application that hosts the API endpoint and handles client requests.  
 - **retriever.py**: Responsible for generating embeddings and retrieving semantically similar documents. This module implements document retrieval using Chroma, a local embedding-based vector database. It embeds documents with Sentence Transformers (all-MiniLM-L6-v2) and retrieves the top-k most semantically similar documents for a given query.
