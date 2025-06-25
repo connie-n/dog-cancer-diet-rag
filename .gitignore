@@ -1,0 +1,8 @@
+.env
+/venv
+
+/data/docs_pdf
+
+query_logs.db
+dump.rdb
+

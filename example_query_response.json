@@ -1,0 +1,42 @@
+[
+    {
+      "query": "What nutrients are beneficial for dogs with cancer?",
+      "answer": "Omega-3 fatty acids (EPA and DHA), antioxidants (such as Vitamins E, C, and selenium), high-quality protein, glutamine, low glycemic index carbohydrates, curcumin, medicinal mushrooms like turkey tail, and probiotics are beneficial nutrients for dogs with cancer.",
+      "note": "First request (uncached) – response computed and cached.",
+      "sources": [
+        "doc_04.txt",
+        "doc_09.txt",
+        "doc_01.txt"
+    ]
+    },
+    {
+      "query": "Can you recommend a fresh homemade meal for a dog with cancer?",
+      "answer": "Certainly! One option is the **Homemade Mesh Potato Meal**:\n\n### Ingredients\n- 1 large sweet potato (rich in antioxidants and vitamins A and C)\n- 150g lean ground turkey (high-quality protein for tissue repair)\n- 1/2 cup steamed green beans (fiber and vitamins)\n- 1 tablespoon olive oil (healthy fats for anti-inflammatory benefits)\n- 1/4 teaspoon turmeric powder (natural anti-inflammatory)\n- 1/2 cup cooked quinoa (complete protein and minerals)\n- Water or low sodium chicken broth as needed\n\n### Preparation Steps\n1. **Prepare the Sweet Potato**: Peel, dice, and boil or steam until soft. Mash into a smooth consistency.\n2. **Cook the Turkey**: Cook thoroughly in a non-stick pan without oil.\n3. **Steam the Vegetables**: Steam green beans until tender, then chop finely.\n4. **Combine Ingredients**: Mix mashed sweet potato, cooked turkey, green beans, quinoa, olive oil, and turmeric powder.\n5. **Adjust Moisture**: Add water or broth for a moist texture.\n6. **Serve**: Cool before serving and portion according to your dog's size and veterinary advice. \n\n### Nutritional Benefits\n- Supports immune function and provides sustained energy, anti-inflammatory benefits, and muscle maintenance. \n\nAlways consult with a vet before introducing new meals, and avoid harmful additives.",
+      "note":"Validate the retrieval accuracy and the effectiveness of the answer generation based on the context.",
+      "sources": [
+        "doc_01.txt",
+        "doc_04.txt",
+        "doc_02.txt"
+    ]
+    },
+    {
+      "query": "What nutrients are beneficial for dogs with cancer?",
+      "answer": "Omega-3 fatty acids (EPA and DHA), antioxidants (such as Vitamins E, C, and selenium), high-quality protein, glutamine, low glycemic index carbohydrates, curcumin, medicinal mushrooms like turkey tail, and probiotics are beneficial nutrients for dogs with cancer.",
+      "note": "Second request (uncached) – response computed and cached.",
+      "sources": [
+        "doc_04.txt",
+        "doc_09.txt",
+        "doc_01.txt"
+    ]
+    },
+    {
+      "query": "What are the signs that my dog might have cancer, and what nutritional support can I provide at early stages?",
+      "answer": "Signs that your dog might have cancer include:\n\n1. Lumps, bumps, or growths, especially those that appear suddenly or change rapidly.\n2. Foul odors, often from the mouth, nose, or anus.\n3. Slow-healing wounds or sores.\n4. Loss of appetite and weight loss.\n5. Digestive distress, including nausea, vomiting, diarrhea, or bloody fecal matter.\n6. Seizures, which can indicate brain tumors.\n7. Urinary symptoms like frequent or painful urination.\n8. Depression, fatigue, and low energy.\n9. Respiratory issues such as coughing or difficulty breathing.\n\nFor nutritional support in the early stages:\n\n- Omega-3 fatty acids (EPA and DHA) from fish oils can help with anti-inflammatory and anti-tumor properties.\n- Antioxidants like Vitamins E and C, and selenium can combat oxidative stress.\n- High-quality protein from fish and lean meats supports muscle mass.\n- Low glycemic index carbohydrates like brown rice and sweet potatoes provide steady energy.\n- Consider supplements like curcumin and medicinal mushrooms, integrating them with professional veterinary advice.",
+      "note": "Validate the retrieval accuracy and the effectiveness of the answer generation based on the context.",
+      "sources": [
+        "doc_04.txt",
+        "doc_05.txt",
+        "doc_09.txt"
+      ]
+      }
+  ]

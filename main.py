@@ -1,9 +1,12 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from typing import List, Dict, Any
+from typing import List
 from retriever import retrieve_similar_docs
-from llm_agent import generate_answer
+from llm_agent import generate_answer_with_cache
 import uvicorn
+from db_logger import log_query
+import logging
+logging.basicConfig(level=logging.INFO)
 
 app = FastAPI()
 
@@ -18,8 +21,10 @@ class QueryResponse(BaseModel):
 async def query_endpoint(request: QueryRequest):
     try:
         docs = retrieve_similar_docs(request.query, top_k=3)
-        answer = generate_answer(request.query, docs)
+        answer = generate_answer_with_cache(request.query, docs)
         sources = [doc['id'] for doc in docs]
+
+        log_query(request.query, answer, sources)
 
         return QueryResponse(answer=answer, sources=sources)
     
