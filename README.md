@@ -101,18 +101,18 @@ redis-server
 POST request to /query:
 ```json
 {
-  "query": "What nutrients are beneficial for dogs with cancer?"
+  "query": "What nutrients are beneficial for dogs with cancer?",
 }
 ```
 
 Sample response:
 ```json
 {
-  "answer": "Omega-3 fatty acids (EPA and DHA), antioxidants (Vitamin E, Vitamin C, Selenium), high-quality protein, glutamine, and low glycemic index carbohydrates are beneficial for dogs with cancer. These nutrients support immune function, reduce inflammation, and help maintain energy and muscle mass.",
+  "answer": "Omega-3 fatty acids (EPA and DHA), antioxidants (such as Vitamins E, C, and selenium), high-quality protein, glutamine, low glycemic index carbohydrates, curcumin, medicinal mushrooms like turkey tail, and probiotics are beneficial nutrients for dogs with cancer.",
   "sources": [
-    "doc_4.txt",
-    "doc_1.txt",
-    "doc_2.txt"
+    "doc_04.txt",
+    "doc_09.txt",
+    "doc_01.txt"
     ]
 }
 ```
